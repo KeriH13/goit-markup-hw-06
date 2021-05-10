@@ -894,6 +894,7 @@ img {
   display: flex;
   align-items: flex-end;
   padding-left: 78px;
+  margin-top: 70px;
 }
 .label-footer {
   display: flex;
