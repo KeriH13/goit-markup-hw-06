@@ -824,6 +824,9 @@ img {
 .footer-left-side {
   display: block;
 }
+.footer-list {
+  width: 246px;
+}
 .footer .container {
   display: flex;
 }
@@ -963,6 +966,7 @@ img {
 .email-area {
   margin-top: 20px;
 
+  padding-left: 15px;
   width: 358px;
   height: 50px;
   left: 815px;
@@ -1023,9 +1027,6 @@ img {
   margin-top: 4px;
   /* margin-bottom: 10px; */
 }
-/* .modal-input::after {
-  content: url('../images/person-black.svg');
-} */
 .modal-textarea {
   background: #ffffff;
 
@@ -1049,26 +1050,31 @@ img {
   letter-spacing: 0.03em;
 
   color: #757575;
-}
 
+  display: flex;
+  align-items: center;
+}
 
 /* ========================================= */
 
-
 /* .policy-label::before {
   content: "";
-  display: block;
+  display: inline-block;
   width: 16px;
   height: 16px;
-  border: 1px solid #000;
+  outline: 1px solid #000;
   border-radius: 4px;
 }
-.modal-checkbox:chceckded + .modal-policy-link::before {
+.modal-checkbox:checked + .policy-label::before {
   background-color: #2196f3;
-} */
+  border: 3px solid #fff;
+  background-image: url("../images/check.svg");
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-
+}  */
 
 .modal-policy-link {
   color: var(--main-color);
@@ -1124,7 +1130,7 @@ img {
 }
 .modal-form-icon {
   width: 12px;
-  height: 12px; 
+  height: 12px;
   position: absolute;
   top: 50%;
   left: 3%;
@@ -1132,17 +1138,15 @@ img {
   fill: #212121;
 }
 
-.modal-form-icon-name {
+/* .modal-form-icon-name {
   content: url('../images/person-black.svg');
-
 }
 .modal-form-icon-tel {
   content: url('../images/phone-black.svg');
 }
 .modal-form-icon-email {
   content: url('../images/email-black.svg');
-}
-
+} */
 
 .modal-input-wrapper {
   position: relative;
@@ -1156,7 +1160,7 @@ img {
 }
 .modal-input:focus + .modal-form-icon {
   outline: none;
-  background-color: var(--main-color); 
+  fill: var(--main-color);
   /* nie działa ----> fill: #2196f3; */
 }
 /* zmiana "fill" ikonki */

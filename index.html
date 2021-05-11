@@ -500,7 +500,9 @@
     <div class="modal-input-wrapper">
 
 <input type="text" name="name" class="modal-input" pattern="^[a-zA-Z]" minlength="2" maxlength="120">
-<div class="modal-form-icon modal-form-icon-name"></div>
+<svg class="modal-form-icon">
+    <use class=" modal-form-icon-name" href="./images/modalicon.svg#icon-person-black"></use>
+</svg>
 <!-- <svg class="modal-icon-svg" widt="12" height="12"></svg> -->
  </div>
    
@@ -511,14 +513,32 @@
 <div class="modal-input-wrapper">
     
     <input type="tel" name="telefon" class="modal-input" min="7" max="12" required>
-        <div class="modal-form-icon modal-form-icon-tel"></div>
+        <svg class="modal-form-icon">
+            <use class=" modal-form-icon-tel" href="./images/modalicon.svg#icon-phone-black"></use>
+        </svg>
 </div>
     <label for="email" class="modal-label">Email</label>
 
 <div class="modal-input-wrapper">
     
+
+
+
+
+
+
     <input type="text" name="email" class="modal-input" required>
-        <div class="modal-form-icon modal-form-icon-email"></div>
+        
+            <svg class="modal-form-icon">
+                <use class=" modal-form-icon-email" href="./images/modalicon.svg#icon-email-black"></use>
+            </svg>
+        
+
+
+
+
+
+
     </div>
     <label for="komentarz" class="modal-label">Komentarz</label>
     <textarea name="komentarz" id="textarea" cols="30" rows="10" class="modal-textarea" placeholder="Wprowadź tekst"></textarea>
@@ -529,9 +549,9 @@
 
 
 
-        <input type="checkbox" class="modal-checkbox modal-form-policy" required>
+        <input type="checkbox" class="modal-checkbox" required>
     
-    <label for="checkbox" class="policy-label">Oświadczam iż akceptuję <a href="#" class="modal-policy-link">Regulamin</a > i <a href="#" class="modal-policy-link">Politykę Prywatności.</a> </label>
+    <label for="checkbox" class="policy-label">Oświadczam iż akceptuję <a href="#" class="modal-policy-link"> Regulamin </a> i <a href="#" class="modal-policy-link">Politykę Prywatności.</a> </label>
 </div>
 
 
