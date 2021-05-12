@@ -858,6 +858,11 @@ img {
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+
+  transition: opacity 2500ms cubic-bezier(0.08, 0.7, 0.035, 1),
+    visibility 2500ms cubic-bezier(0.08, 0.7, 0.035, 1);
 }
 .modal {
   position: absolute;
